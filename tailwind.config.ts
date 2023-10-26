@@ -21,6 +21,12 @@ const config: Config = {
         green: {
           primary: "#53AA51"
         },
+
+        grey :{
+          strong: "#7E7F81",
+          light: "#D4D6E1",
+          ultraLight: "#F5F7F9",
+        }
       }
     },
   },

@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montsarrat.className} antialiased`}>
+      <body className={`${montsarrat.className} antialiased bg-grey-ultraLight`}>
         <Header />
         {children}
         </body>
