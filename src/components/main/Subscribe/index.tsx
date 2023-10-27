@@ -10,7 +10,7 @@ const Subscribe = () => {
 
          <div className="flex justify-center items-center h-10 ">
             <input className="h-full px-4  border-none rounded-full bg-grey-light text-grey-stronger outline-none"  type="text" placeholder="Your Email"/>
-            <button className="h-full -ml-8 px-6  rounded-full text-white bg-grey-strong text-xs">SEND</button>
+            <button className="h-full -ml-8 px-6 rounded-full text-white bg-grey-strong hover:bg-green-primary hover:opacity-50 text-xs">SEND</button>
          </div>
      
       </div>
