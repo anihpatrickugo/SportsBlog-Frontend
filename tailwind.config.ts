@@ -23,6 +23,7 @@ const config: Config = {
         },
 
         grey :{
+          stronger: "#141A28",
           strong: "#7E7F81",
           light: "#D4D6E1",
           ultraLight: "#F5F7F9",

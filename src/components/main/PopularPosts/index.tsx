@@ -11,7 +11,7 @@ import blogpost4 from "../../../app/assets/images/blogpost4.png"
 
 const PopularPosts = () => {
   return (
-    <section className=' w-screen pt-72 md:pt-0 relative'>
+    <section className=' w-screen pt-72 md:pt-0 pb-12 relative'>
 
         {/* top */}
         <div className="w-full bg-grey-light flex flex-col justify-center items-center px-8">

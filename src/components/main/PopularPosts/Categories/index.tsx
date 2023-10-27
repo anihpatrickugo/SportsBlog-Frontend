@@ -7,7 +7,7 @@ const Categories = () => {
               <Category id={1} name='Playoffs'/>
               <Category id={2} name='NBA Season'/>
               <Category id={3} name='Boston Celtics'/>
-    </div>
+        </div>
   )
 }
 
