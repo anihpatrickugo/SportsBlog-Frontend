@@ -46,11 +46,11 @@ const Banner = () => {
             </div>
 
               {/* action */}
-              <div className="flex justify-start gap-4 my-8">
-                      <Link href="/" className='bg-green-primary text-sm text-white px-8 py-4 rounded-full font-bold hover:opacity-50 hover:underline'>
+              <div className="flex justify-start flex-wrap gap-4 my-8">
+                      <Link href="/" className='bg-green-primary text-sm text-white px-6 md:px-8 py-2 md:py-4 rounded-full font-bold hover:opacity-50 hover:underline'>
                             Get Started
                       </Link>
-                      <Link href="/" className='hover:bg-grey-strong text-sm md:text-md text-grey-strong hover:text-white px-8 py-4 rounded-full font-bold hover:opacity-50 hover:underline'>
+                      <Link href="/" className='hover:bg-grey-strong text-sm md:text-md text-grey-strong hover:text-white px-6 md:px-8 py-2 md:py-4 rounded-full font-bold hover:opacity-50 hover:underline'>
                        See all features &gt;
                       </Link>
               </div>
