@@ -8,7 +8,7 @@ interface NavLinkProps {
 
 const Button:FC<NavLinkProps> = ({name, url}):JSX.Element => {
   return (
-    <Link className='text-white hover:underline hover:underline-offset-4' href={url} >{name}</Link>
+    <Link className='text-white text-sm hover:underline hover:underline-offset-4' href={url} >{name}</Link>
   )
 }
 

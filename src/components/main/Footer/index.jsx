@@ -9,21 +9,39 @@ const Footer = () => {
   return (
     <footer className="w-screen bg-grey-stronger -mt-1">
       <div className="max-w-5xl mx-auto px-4 py-12 flex flex-col md:flex-row justify-between items-center">
-        <div className="w-full md:w-4/12 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-1 md:text-xs">
+        <div className="w-full md:w-5/12 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-1 md:text-[8px]">
           <Link href="/" className="text-grey-strong hover:text-green-primary">
-            ABOUT
+            HOME
           </Link>
-          <Link href="/" className="text-grey-strong hover:text-green-primary">
+          <Link
+            href="/abou"
+            className="text-grey-strong hover:text-green-primary"
+          >
+            ABOUT US
+          </Link>
+          <Link
+            href="/contact"
+            className="text-grey-strong hover:text-green-primary"
+          >
             CONTACT US
           </Link>
-          <Link href="/" className="text-grey-strong hover:text-green-primary">
-            HELP
+          <Link
+            href="/privacy"
+            className="text-grey-strong hover:text-green-primary"
+          >
+            PRIVACY POLICY
           </Link>
-          <Link href="/" className="text-grey-strong hover:text-green-primary">
-            LEGAL
+          <Link
+            href="/dmca"
+            className="text-grey-strong hover:text-green-primary"
+          >
+            DMCA
           </Link>
-          <Link href="/" className="text-grey-strong hover:text-green-primary">
-            STORE
+          <Link
+            href="/terms"
+            className="text-grey-strong hover:text-green-primary"
+          >
+            TERMS & CONDITIONS
           </Link>
         </div>
 
