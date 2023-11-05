@@ -1,14 +1,14 @@
-import NavLink from '../../common/NavlLink.tsx'
+import Link from 'next/link'
 
 const HeaderLinks = () => {
   return (
           <nav className="hidden md:flex flex-1 justify-between items-center ">
-              <NavLink name='HOME' url="/"/>
-              <NavLink name='ABOUT US' url="/about"/>
-              <NavLink name='CONTACT US' url="/contact"/>
-              <NavLink name='PRIVACY POLICY' url="/privacy"/>
-              <NavLink name='DMCA' url="/dmca"/>
-              <NavLink name='TERMS & CONDITIONS' url="/terms"/>
+              <Link className='text-white text-sm hover:underline hover:underline-offset-4 hover:text-green-primary py-2' href='/' >HOME</Link>
+              <Link className='text-white text-sm hover:underline hover:underline-offset-4 hover:text-green-primary py-2' href='/about' >ABOUT US</Link>
+              <Link className='text-white text-sm hover:underline hover:underline-offset-4 hover:text-green-primary py-2' href='/contact' >CONTACT US</Link>
+              <Link className='text-white text-sm hover:underline hover:underline-offset-4 hover:text-green-primary py-2' href='/privacy' >PRIVACY POLICY</Link>
+              <Link className='text-white text-sm hover:underline hover:underline-offset-4 hover:text-green-primary py-2' href='/dmca' >DMCA</Link>
+              <Link className='text-white text-sm hover:underline hover:underline-offset-4 hover:text-green-primary py-2' href='/terms' >TERMS & CONDITIONS</Link>
            </nav>
   )
 }

@@ -14,7 +14,7 @@ const Footer = () => {
             HOME
           </Link>
           <Link
-            href="/abou"
+            href="/about"
             className="text-grey-strong hover:text-green-primary"
           >
             ABOUT US

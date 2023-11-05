@@ -1,6 +1,8 @@
+import { Suspense } from 'react'
 import {FC} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import LoadingComponent from '@/components/common/Loading'
 import { PostProps } from '@/app/types/posts'
 
 
@@ -8,7 +10,9 @@ import { PostProps } from '@/app/types/posts'
 
 const TopSory:FC<PostProps> = ({image, title, author, date}) => {
   return (
-    <div className="w-full md:w-5/12 mb-8 flex justify-start items-start gap-1 hover:md:w-6/12">
+         <Suspense fallback={<LoadingComponent message='Loading Topstory ...'/>}>
+
+             <div className="w-full md:w-5/12 mb-8 flex justify-start items-start gap-1 hover:md:w-6/12">
                  <div className="w-2/5 rounded-3xl">
                     <Image className='w-full' src={image} height={500} width={500} alt='blog post 1'/>
                  </div>
@@ -18,6 +22,7 @@ const TopSory:FC<PostProps> = ({image, title, author, date}) => {
                  </div>
                  
               </div>
+         </Suspense>
   )
 }
 

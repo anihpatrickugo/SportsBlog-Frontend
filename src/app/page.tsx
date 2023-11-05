@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+
 import Hero from "@/components/main/Hero"
 import PopularPosts from '@/components/main/PopularPosts'
 import Banner from '@/components/main/Banner'

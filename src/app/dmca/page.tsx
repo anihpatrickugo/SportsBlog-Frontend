@@ -1,19 +1,19 @@
-import type { Metadata } from "next"
-import PrivacyPolicy from "@/components/main/PrivacyPolicy"
+import type { Metadata } from 'next'
+import DMCA from "@/components/main/DMCA"
 import Banner from "@/components/main/Banner"
 import TopStories from "@/components/main/TopStories"
 import CallToAction from "@/components/main/CallToAction"
 
 export const metadata: Metadata = {
-  title: 'SportsBlog - Privacy Policy',
-  description: 'Here is our privacy policy.',
-}
+    title: 'SportsBlog - DMCA',
+    description: 'If you require any more information or have any questions about our site',
+  }
 
 
-const Privacy = () => {
+const Dmca = () => {
   return (
     <>
-      <PrivacyPolicy/>
+      <DMCA/>
       <Banner/>
       <TopStories/>
       <CallToAction/> 
@@ -21,4 +21,4 @@ const Privacy = () => {
   )
 }
 
-export default Privacy
+export default Dmca

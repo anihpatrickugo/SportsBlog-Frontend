@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import blogPost1 from '../../../app/assets/images/blogpost1.png'
@@ -8,11 +9,13 @@ import bookmark from '../../../app/assets/icons/bookmark.svg'
 import flag from '../../../app/assets/icons/flag.svg'
 
 import Categories from '@/components/common/Categories'
+import LoadingComponent from '@/components/common/Loading'
 
 
 const Detail = () => {
   return (
-       <div className="w-full flex flex-col items-center">
+       <Suspense fallback={<LoadingComponent message='Loading Post Detail...'/>}>
+            <div className="w-full flex flex-col items-center">
             <h6 className="text-grey-light text-sm font-bold my-6">GAME REVIEWS</h6>
         <h1 className="max-w-2xl text-xl md:text-5xl font-bold text-grey-stronger text-center mb-12">
         The Biggest Losers of a (likely) Nixed NBA Season
@@ -88,6 +91,7 @@ const Detail = () => {
 
         </div> 
        </div>
+       </Suspense>
   )
 }
 
