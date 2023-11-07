@@ -1,4 +1,6 @@
+"use client"
 
+import {useState} from 'react'
 import { Montserrat } from 'next/font/google'
 import './globals.css'
 
@@ -15,14 +17,22 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+  const [mobileToggled, setMobileToggled] = useState(false)
+ 
   return (
-    <html lang="en">
-      <body className={`${montsarrat.className} antialiased bg-grey-ultraLight`}>
-         <Header />
+    
+      <html lang="en">
+      <body className={`${montsarrat.className} antialiased bg-grey-ultraLight ${mobileToggled && 'overflow-y-hidden'}`}>
+         <Header mobileMenu={{mobileToggled, setMobileToggled}}/>
          {children}
          <Footer/>
          <CookieConsent/>
         </body>
-    </html>
+     </html>
+
+
+    
+    
   )
 }
