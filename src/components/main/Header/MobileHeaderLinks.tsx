@@ -15,7 +15,7 @@ const MobileHeaderLinks:FC<Props> = ({setMobileToggled}) => {
 
   return (
     <div  className='flex justify-center items-center md:hidden w-screen h-screen absolute z-50 top-0 right-0 left-0 bottom-0 overflow-hidden bg-grey-light animate-[pulse_1s_ease-out_1]'>
-         <div onClick={()=> setMobileToggled(false)} className="absolute top-20 right-20 flex justify-center items-center">
+         <div onClick={()=> setMobileToggled(false)} className="absolute top-5 right-5 flex justify-center items-center">
            <GrClose size={30}/>
          </div>
          
