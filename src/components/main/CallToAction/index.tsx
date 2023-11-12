@@ -12,7 +12,7 @@ const CallToAction = () => {
          <h1 className="text-white font-bold text-md md:text-4xl text-center my-4"> We&apos;ve got something to say.
              <br/>And you may definitely want to hear it.</h1>
 
-          <Link href="/" className='my-4 bg-white text-xs text-green-primary px-6 font-bold py-3 rounded-full hover:opacity-50 hover:underline'> JOIN OUR SPORTSBLOG</Link>
+          <Link href="/auth/signup" className='my-4 bg-white text-xs text-green-primary px-6 font-bold py-3 rounded-full hover:opacity-50 hover:underline'> JOIN OUR SPORTSBLOG</Link>
          
       </div>
     </section>

@@ -1,8 +1,8 @@
+"use client"
 import React from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import PopularPostCard from './PopularPostCard'
-import profileImage from "../../../app/assets/images/profile.png"
+import {BsSearch} from 'react-icons/bs'
 import blogpost1 from "../../../app/assets/images/blogpost1.png"
 import blogpost2 from "../../../app/assets/images/blogpost2.png"
 import blogpost3 from "../../../app/assets/images/blogpost3.png"
@@ -19,23 +19,27 @@ const PopularPosts = () => {
 
             <p className='text-grey-strong  md:w-1/2 text-center text-xs my-4'>Chemistry has always been the Clippers’ issue. For starters, all their players have had some kind of injury this year, preventing the team from getting into a good rhythm and used to playing...</p>
 
-            <div className="hidden  md:flex justify-between items-center mx-8 my-8 w-full md:w-9/12">
-                <div className="w-6/12 flex  justify-between items-center font-semibold">
-                    <Link href="" className='hover:font-extrabold hover:underline hover:underline-offset-8 hover:decoration-4 hover:decoration-green-primary'>ALL</Link>
-                    <Link href="" className='hover:font-extrabold hover:underline hover:underline-offset-8 hover:decoration-4 hover:decoration-green-primary'>PLAYOFFS</Link>
-                    <Link href="" className='hover:font-extrabold hover:underline hover:underline-offset-8 hover:decoration-4 hover:decoration-green-primary'>NBA SEASON</Link>
-                    <Link href="" className='hover:font-extrabold hover:underline hover:underline-offset-8 hover:decoration-4 hover:decoration-green-primary'>BOSTON CELTICS</Link>
+            <div className="flex flex-col-reverse md:flex-row justify-between md:items-center mx-8 my-8 w-full md:w-9/12">
+                <div className="w-full md:w-8/12 flex gap-4 font-semibold overflow-x-scroll flex-nowrap">
+                    <Link href="" className='hover:font-extrabold hover:underline hover:underline-offset-8 hover:decoration-4 hover:decoration-green-primary whitespace-nowrap'>ALL</Link>
+                    <Link href="" className='hover:font-extrabold hover:underline hover:underline-offset-8 hover:decoration-4 hover:decoration-green-primary whitespace-nowrap'>SOCCER</Link>
+                    <Link href="" className='hover:font-extrabold hover:underline hover:underline-offset-8 hover:decoration-4 hover:decoration-green-primary whitespace-nowrap'>BASKETBALL</Link>
+                    <Link href="" className='hover:font-extrabold hover:underline hover:underline-offset-8 hover:decoration-4 hover:decoration-green-primary whitespace-nowrap'>TENNIS</Link>
+                    <Link href="" className='hover:font-extrabold hover:underline hover:underline-offset-8 hover:decoration-4 hover:decoration-green-primary whitespace-nowrap'>RUGBY</Link>
+                    <Link href="" className='hover:font-extrabold hover:underline hover:underline-offset-8 hover:decoration-4 hover:decoration-green-primary whitespace-nowrap'>FOOTBALL</Link>
+                    <Link href="" className='hover:font-extrabold hover:underline hover:underline-offset-8 hover:decoration-4 hover:decoration-green-primary whitespace-nowrap'>RACING</Link>
+                    <Link href="" className='hover:font-extrabold hover:underline hover:underline-offset-8 hover:decoration-4 hover:decoration-green-primary whitespace-nowrap'>HOCKEY</Link>
                 </div>
 
-                <div className='w-1/2 flex justify-end items-center'>
-                     <div className="w-1/12 hover:cursor-pointer">
-                       <Image className='w-full' src={profileImage} width={400} height={500} alt="writer image"/>
-                     </div>
-                     <div className='mx-2 hover:cursor-pointer'>
-                        <h6 className='text-xs'>BLOG AUTHOR</h6>
-                        <h4 className='text-Sm font-bold'>Anih Patrick</h4>
-                     </div>
+                                  
+                <div className="w-full md:w-3/12 flex justify-end items-center p-1  mx-auto mb-8 md:mb-0">
+                  <input className='bg-grey-ultraLight w-11/12 p-2 border border-r-0 rounded-r-none border-grey-strong rounded-lg' type="text" id="search" name="search" value="" placeholder='Search'  onChange={()=>{}} />
+                  
+                  <div className=" bg-grey-ultraLight p-1 border border-l-0 rounded-l-none border-grey-strong rounded-lg hover:bg-green-primary">
+                    <BsSearch size={32}  color="grey" />
+                  </div>
                 </div>
+                 
             </div>
 
         </div>

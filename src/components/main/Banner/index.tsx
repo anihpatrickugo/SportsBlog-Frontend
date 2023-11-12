@@ -47,7 +47,7 @@ const Banner = () => {
 
               {/* action */}
               <div className="flex justify-start flex-wrap gap-4 my-8">
-                      <Link href="/" className='bg-green-primary text-sm text-white px-6 md:px-8 py-2 md:py-4 rounded-full font-bold hover:opacity-50 hover:underline'>
+                      <Link href="/auth/signup" className='bg-green-primary text-sm text-white px-6 md:px-8 py-2 md:py-4 rounded-full font-bold hover:opacity-50 hover:underline'>
                             Get Started
                       </Link>
                       <Link href="/" className='hover:bg-grey-strong text-sm md:text-md text-grey-strong hover:text-white px-6 md:px-8 py-2 md:py-4 rounded-full font-bold hover:opacity-50 hover:underline'>

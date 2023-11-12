@@ -10,7 +10,7 @@ const HeaderRightButtons = () => {
         </button>
 
          {/* sign in */}
-        <Button text='SIGN IN'/>
+        <Button href='/auth/login' text='SIGN IN'/>
                  
     </div>
   )
