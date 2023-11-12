@@ -10,7 +10,7 @@ import LoadingComponent from '@/components/common/Loading'
 
 const PopularPostCard: FC<PostProps> = ({image, title, details, author, date}):JSX.Element => {
   return (
-        <Suspense fallback={<LoadingComponent message='Loading Popular Posts...'/>}>
+        <Suspense fallback={<LoadingComponent/>}>
 
           <div className="w-4/5 md:w-2/5 flex flex-col items-start justify-evenly mt-8 hover:md:w-5/12">
             <Image className='w-full rounded-2xl' src={image} height={500} width={500} alt='Blog post'/>
