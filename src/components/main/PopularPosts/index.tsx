@@ -20,7 +20,7 @@ const PopularPosts = () => {
             <p className='text-grey-strong  md:w-1/2 text-center text-xs my-4'>Chemistry has always been the Clippers’ issue. For starters, all their players have had some kind of injury this year, preventing the team from getting into a good rhythm and used to playing...</p>
 
             <div className="flex flex-col-reverse md:flex-row justify-between md:items-center mx-8 my-8 w-full md:w-9/12">
-                <div className="w-full md:w-8/12 flex gap-4 font-semibold overflow-x-scroll flex-nowrap">
+                <div className="w-full md:w-8/12 flex gap-4 font-semibold overflow-x-scroll flex-nowrap pb-4">
                     <Link href="" className='hover:font-extrabold hover:underline hover:underline-offset-8 hover:decoration-4 hover:decoration-green-primary whitespace-nowrap'>ALL</Link>
                     <Link href="" className='hover:font-extrabold hover:underline hover:underline-offset-8 hover:decoration-4 hover:decoration-green-primary whitespace-nowrap'>SOCCER</Link>
                     <Link href="" className='hover:font-extrabold hover:underline hover:underline-offset-8 hover:decoration-4 hover:decoration-green-primary whitespace-nowrap'>BASKETBALL</Link>
