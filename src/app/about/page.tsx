@@ -5,8 +5,8 @@ import TopStories from "@/components/main/TopStories"
 import CallToAction from "@/components/main/CallToAction"
 
 export const metadata: Metadata = {
-  title: 'SportsBlog - Abou Us',
-  description: 'Learn more Abou us.',
+  title: 'SportsBlog - About Us',
+  description: 'Learn more About us.',
 }
 
 const About = () => {

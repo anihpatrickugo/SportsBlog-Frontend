@@ -34,7 +34,7 @@ return null;
 }
 
 return (
-    <div className='ml-0 fixed bottom-0 md:-bottom-10 left-1/2 w-full  md:w-2/3 max-w-2xl min-w-xs py-15 p-8 m-4 bg-green-primary text-white flex flex-col items-center justify-center transform -translate-x-1/2'> 
+    <div className='ml-0 fixed z-50 bottom-0 md:-bottom-10 left-1/2 w-full  md:w-2/3 max-w-2xl min-w-xs py-15 p-8 m-4 bg-green-950 text-white flex flex-col items-center justify-center transform -translate-x-1/2'> 
     <div> 
         <p>We use some <strong>standard analytics packages</strong> to understand general user behaviour, so we can figure out how to improve our content. This involves some cookies. Are you OK with this?</p> 
     </div> 
