@@ -14,7 +14,7 @@ import LoadingComponent from '@/components/common/Loading'
 
 const Detail = () => {
   return (
-       <Suspense fallback={<LoadingComponent message='Loading Post Detail...'/>}>
+       <Suspense fallback={<LoadingComponent />}>
             <div className="w-full flex flex-col items-center">
             <h6 className="text-grey-light text-sm font-bold my-6">GAME REVIEWS</h6>
         <h1 className="max-w-2xl text-xl md:text-5xl font-bold text-grey-stronger text-center mb-12">
