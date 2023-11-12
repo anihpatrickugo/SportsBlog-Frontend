@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const Page = () => {
   return (
     <section className="w-screen bg-grey-ultraLight p-4 absolute top-0 left-0 right-0 bottom-0">
-      <div className="max-w-3xl mx-auto h-screen md:h-auto flex flex-col justify-between items-center bg-white p-4">
+      <div className="max-w-3xl mx-auto flex flex-col justify-between items-center bg-white p-4">
 
         <h1 className="text-3xl font-bold text-grey-stronger my-4"> Sign Up </h1>
         <p className="text-green-primary">Create an Account</p>
