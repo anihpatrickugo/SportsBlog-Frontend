@@ -48,7 +48,7 @@ const SignUpForm = () => {
                </div>
             </div>
 
-            <button className="bg-green-primary hover:bg-green-950 w-full py-4 text-lg text-white rounded-full">Sign Up</button>
+            <button className="bg-green-primary hover:bg-green-950 w-8/12 py-4 text-lg text-white rounded-full">Sign Up</button>
             
         </form>
   )

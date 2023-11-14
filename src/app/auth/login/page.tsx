@@ -25,7 +25,7 @@ const Page = () => {
         <p className="text-grey-strong my-4">Or sign in with </p>
 
         
-        <button className="w-full md:w-8/12 lg:6/12 bg-red-400 hover:bg-grey-strong active:bg-grey-light py-4 text-lg text-white rounded-full flex item-center justify-center"> <i className="mx-4"> <FcGoogle size={25}/> </i> Continue with Google</button>
+        <button className="w-8/12 md:w-6/12 bg-grey-light hover:bg-grey-strong active:bg-red-400 py-4 text-lg text-grey-stronger rounded-full flex item-center justify-center"> <i className="mx-4"> <FcGoogle size={25}/> </i> Continue with Google</button>
 
         <Link href="/auth/signup" className="my-8 text-lg font-bold text-green-800">Create an Account</Link>
 
