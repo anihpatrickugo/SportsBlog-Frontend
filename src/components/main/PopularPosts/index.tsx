@@ -33,7 +33,7 @@ const PopularPosts = () => {
 
                                   
                 <div className="w-full md:w-3/12 flex justify-end items-center p-1  mx-auto mb-8 md:mb-0">
-                  <input className='bg-grey-ultraLight w-11/12 p-2 border border-r-0 rounded-r-none border-grey-strong rounded-lg active:border-green-primary' type="text" id="search" name="search" value="" placeholder='Search'  onChange={()=>{}} />
+                  <input className='bg-grey-ultraLight w-11/12 p-2 border border-r-0 rounded-r-none border-grey-strong rounded-lg outline-none' type="text" id="search" name="search" value="" placeholder='Search'  onChange={()=>{}} />
                   
                   <div className=" bg-grey-ultraLight p-2 border border-l-0 rounded-l-none border-grey-strong rounded-lg hover:bg-green-primary">
                     <BsSearch size={24}  color="grey" />

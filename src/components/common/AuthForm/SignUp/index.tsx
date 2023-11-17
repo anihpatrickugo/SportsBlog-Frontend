@@ -10,7 +10,7 @@ const SignUpForm = () => {
              <div className="w-full">
                   <h5 className='self-start text-grey-strong font-bold'>FirstName</h5>
                   <div className="w-full p-1  mx-auto">
-                    <input className='w-full p-2 border border-grey-strong rounded-lg' type="text" id="firstname" name="firstname" value="" placeholder='Your FirstName' onChange={()=>{}} />
+                    <input className='w-full p-2 border border-grey-strong rounded-lg outline-none' type="text" id="firstname" name="firstname" value="" placeholder='Your FirstName' onChange={()=>{}} />
                  </div>
             </div>
 
@@ -18,7 +18,7 @@ const SignUpForm = () => {
              <div className="w-full">
                   <h5 className='self-start text-grey-strong font-bold'>LastName</h5>
                   <div className="w-full p-1  mx-auto">
-                    <input className='w-full p-2 border border-grey-strong rounded-lg' type="text" id="lastname" name="lastname" value="" placeholder='Your LastName' onChange={()=>{}} />
+                    <input className='w-full p-2 border border-grey-strong rounded-lg outline-none' type="text" id="lastname" name="lastname" value="" placeholder='Your LastName' onChange={()=>{}} />
                  </div>
             </div>
 
@@ -26,7 +26,7 @@ const SignUpForm = () => {
              <div className="w-full">
                   <h5 className='self-start text-grey-strong font-bold'>Email</h5>
                   <div className="w-full p-1  mx-auto">
-                    <input className='w-full p-2 border border-grey-strong rounded-lg' type="email" id="email" name="email" value="" placeholder='hello@example.com' onChange={()=>{}} />
+                    <input className='w-full p-2 border border-grey-strong rounded-lg outline-none' type="email" id="email" name="email" value="" placeholder='hello@example.com' onChange={()=>{}} />
                  </div>
             </div>
             
@@ -35,7 +35,7 @@ const SignUpForm = () => {
             <div className="w-full">
                <h5 className='self-start text-grey-strong font-bold'>Password</h5>
                <div className="w-full p-1 flex items-center  mx-auto">
-                  <input className='w-11/12 p-2 border border-r-0 rounded-r-none border-grey-strong rounded-lg' type={vissiblePassword ? "text": "password"} id="Password" name="password" value="" placeholder='Your Password'  onChange={()=>{}} />
+                  <input className='w-11/12 p-2 border border-r-0 rounded-r-none border-grey-strong rounded-lg outline-none' type={vissiblePassword ? "text": "password"} id="Password" name="password" value="" placeholder='Your Password'  onChange={()=>{}} />
                   
                   <div className="border border-l-0 rounded-l-none border-grey-strong rounded-lg" onClick={()=>setVisiblePassword(!vissiblePassword)}>
                     { vissiblePassword ? (

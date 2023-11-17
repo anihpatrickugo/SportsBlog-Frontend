@@ -9,7 +9,7 @@ import dollar from "../../../app/assets/icons/dollar.svg"
 const Banner = () => {
   return (
     <section className='w-screen bg-grey-light'>
-      <div className="max-w-5xl mx-auto p-4 flex flex-col-reverse md:flex-row justify-between items-center gap-2">
+      <div className="max-w-5xl mx-auto px-4 flex flex-col-reverse md:flex-row justify-between items-center gap-2">
          <div className="w-full md:w-1/2">
             <Image className="w-full" src={bannerImage} alt="banner" height={500} width={500}/>
          </div> 
