@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     
       <html lang="en">
-      <body className={`${montsarrat.className} antialiased bg-grey-ultraLight ${mobileToggled && 'overflow-y-hidden'}`}>
+      <body className={`${montsarrat.className} antialiased scroll-smooth bg-grey-ultraLight ${mobileToggled && 'overflow-y-hidden'}`}>
          <Header mobileMenu={{mobileToggled, setMobileToggled}}/>
          {children}
          <Footer/>
