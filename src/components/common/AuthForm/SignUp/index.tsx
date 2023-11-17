@@ -18,7 +18,7 @@ const SignUpForm = () => {
              <div className="w-full">
                   <h5 className='self-start text-grey-strong font-bold'>LastName</h5>
                   <div className="w-full p-1  mx-auto">
-                    <input className='w-full p-2 border border-grey-strong rounded-lg' type="text" id="lastname" name="lastname" value="" placeholder='Your LasttName' onChange={()=>{}} />
+                    <input className='w-full p-2 border border-grey-strong rounded-lg' type="text" id="lastname" name="lastname" value="" placeholder='Your LastName' onChange={()=>{}} />
                  </div>
             </div>
 
