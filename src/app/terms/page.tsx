@@ -1,4 +1,6 @@
 import type { Metadata } from "next"
+import { getClient } from '@/apollo/client';
+import { gql } from "@apollo/client";
 import Terms from "@/components/main/TermsAndConditions"
 import Banner from "@/components/main/Banner"
 import TopStories from "@/components/main/TopStories"
@@ -9,13 +11,43 @@ export const metadata: Metadata = {
   description: 'Here is our Terms and Conditions.',
 }
 
+export const revalidate = 5;
 
-const TermsAndConditionsPolicy = () => {
+const query = gql`query {
+
+  topStories {
+    id
+    tags
+    title
+    author{
+      username
+    }
+    category {
+      name
+    }
+    content
+    tags
+    date
+    banner {
+      url
+    }
+    comments {
+      id
+      message
+      date
+    }
+  }
+}`
+
+
+const TermsAndConditionsPolicy = async() => {
+  const { data } = await getClient().query({ query });
+
   return (
     <>
       <Terms/>
       <Banner/>
-      <TopStories/>
+      <TopStories data={data.topStories}/>
       <CallToAction/> 
     </>
   )

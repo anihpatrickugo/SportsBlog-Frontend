@@ -8,20 +8,20 @@ import facebook from '../../../app/assets/icons/facebook.svg'
 import bookmark from '../../../app/assets/icons/bookmark.svg'
 import flag from '../../../app/assets/icons/flag.svg'
 
-import Categories from '@/components/common/Categories'
+import PostTags from '@/components/common/PostTags .tsx'
 import LoadingComponent from '@/components/common/Loading'
+import { PostProps } from '@/app/types/posts'
 
 
-const Detail = () => {
+const Detail = ({post}: {post: PostProps}) => {
+
   return (
        <Suspense fallback={<LoadingComponent />}>
             <div className="w-full flex flex-col items-center">
             <h6 className="text-grey-light text-sm font-bold my-6">GAME REVIEWS</h6>
-        <h1 className="max-w-2xl text-xl md:text-5xl font-bold text-grey-stronger text-center mb-12">
-        The Biggest Losers of a (likely) Nixed NBA Season
-        </h1>
+        <h1 className="max-w-2xl text-xl md:text-5xl font-bold text-grey-stronger text-center mb-12"> {post.title} </h1>
         <div className="w-full mb-12">
-            <Image className='w-full' alt="post detail" src={blogPost1} height={500} width={500}/>
+            <Image className='w-full' alt="post detail" src={post.banner.url} height={500} width={500}/>
         </div>
 
         {/* blog details */}
@@ -67,7 +67,7 @@ const Detail = () => {
 
         {/* post categories tag  and social icons*/}
         <div className="w-full flex justify-between items-center">
-           <Categories/>
+           <PostTags tags={post.tags} />
 
            <div className="flex justify-between items-center gap-4">
               <Link href="/">

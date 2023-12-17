@@ -12,27 +12,41 @@ const AuthorPosts = () => {
 
         <div className="w-full flex flex-col md:flex-row justify-between items-center flex-wrap space-x-1">
               <AuthorPost 
-                 image={blogPost1} 
+                 id={1}
+                 tags={[]}
+                 category='Football'
+                 banner={{url:blogPost1}}  
                  title="Titans Post Elite PFF Tackling in 2019 Tackling "
-                 author="Anih Patrick"
+                 author={{username: "Anih Patrick"}}
                  date="27 October 2023 "
                  />
               <AuthorPost 
-                 image={blogPost2} 
+                  id={2}
+                  tags={[]}
+                  category='Football'
+                 banner={{url:blogPost2}} 
                  title="Titans Post Elite PFF Tackling in 2019 Tackling "
-                 author="Anih Patrick"
+                 author={{username: "Anih Patrick"}}
                  date="27 October 2023 "
                  />
+
               <AuthorPost 
-                 image={blogPost3} 
+                 id={3}
+                 tags={[]}
+                 category='Football'
+                 banner={{url:blogPost3}}  
                  title="Titans Post Elite PFF Tackling in 2019 Tackling "
-                 author="Anih Patrick"
+                 author={{username: "Anih Patrick"}}
                  date="27 October 2023 "
                  />
+
               <AuthorPost 
-                 image={blogPost4} 
+                 id={4}
+                 tags={[]}
+                 category='Football'
+                 banner={{url:blogPost4}}  
                  title="Titans Post Elite PFF Tackling in 2019 Tackling "
-                 author="Anih Patrick"
+                 author={{username: "Anih Patrick"}}
                  date="27 October 2023 "
                  />
               
